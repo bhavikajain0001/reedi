@@ -139,7 +139,7 @@ def main():
 				vizElement.parentNode.insertBefore(scriptElement, vizElement);
 			</script>
 			"""
-		components.html(html_temp, width=1500, height=1835)
+		components.html(html_temp, width=1500, height=1825)
 
 def footer():
     st.markdown('<div style=font-size:15px>Powered by </div>', unsafe_allow_html=True)

@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 from PIL import Image
 
-st.set_page_config(page_title="💡 REEdI Career Pathway Planning Platform", page_icon="💡", layout="wide")
+st.set_page_config(page_title="REEdI Career Pathway Planning Platform", page_icon="💡", layout="wide")
 overall_streamlit_style = """
 			<style>		
 			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
@@ -139,7 +139,7 @@ def main():
 				vizElement.parentNode.insertBefore(scriptElement, vizElement);
 			</script>
 			"""
-		components.html(html_temp, width=1400, height=1000)
+		components.html(html_temp, width=1900, height=2000)
 
 def footer():
     st.markdown('<div style=font-size:15px>Powered by </div>', unsafe_allow_html=True)

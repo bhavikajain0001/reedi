@@ -139,12 +139,10 @@ def main():
 				vizElement.parentNode.insertBefore(scriptElement, vizElement);
 			</script>
 			"""
-		components.html(html_temp, width=1500, height=1825)
+		components.html(html_temp, width=1500, height=1800)
 
 def footer():
-    st.markdown('<div style=font-size:15px>Powered by </div>', unsafe_allow_html=True)
-    image_2 = Image.open('/app/images/logo_2.png')
-    #st.image(image_2, use_column_width=True)
+    st.markdown('<div style=font-size:15px>Powered by Abodoo</div>', unsafe_allow_html=True)
     
 # the controller
 def load_page():

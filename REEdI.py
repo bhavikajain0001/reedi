@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 from PIL import Image
 
-st.set_page_config(page_title="REEdI Career Pathway Planning Platform", page_icon="💡", layout="wide")
+st.set_page_config(page_title="REEdI CP3: Careers Progression Pathway Planning", page_icon="💡", layout="wide")
 overall_streamlit_style = """
 			<style>		
 			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
@@ -46,7 +46,7 @@ st.markdown(overall_streamlit_style, unsafe_allow_html=True)
 # structuring the side bar menu
 def sidebar_info():
 	st.sidebar.markdown(overall_streamlit_style, unsafe_allow_html=True)
-	st.sidebar.title('💡 REEdI Career Pathway Planning Project')
+	st.sidebar.title('💡 REEdI CP3: Careers Progression Pathway Planning')
 	st.sidebar.markdown("""
                    The Career Pathway Planning Project aims to align the REEdI program with industry needs to produce successful graduates and provide them with career planning support. It incorporates two major elements:""")
 	st.sidebar.markdown("""1. REEdI Course Modules Skillification to measure skills in supply""") 

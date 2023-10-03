@@ -48,7 +48,7 @@ def sidebar_info():
 	st.sidebar.markdown(overall_streamlit_style, unsafe_allow_html=True)
 	st.sidebar.title('💡 REEdI CP3: Careers Progression Pathway Planning')
 	st.sidebar.markdown("""
-                   The Career Pathway Planning Project aims to align the REEdI program with industry needs to produce successful graduates and provide them with career planning support. It incorporates two major elements:""")
+                   CP3 aims to align the REEdI program with industry needs to produce successful graduates and provide them with career planning support. It incorporates two major elements:""")
 	st.sidebar.markdown("""1. REEdI Course Modules Skillification to measure skills in supply""") 
 	st.sidebar.markdown("""2. Job postings data analysis to measure the skills in demand""") 
 
@@ -60,7 +60,7 @@ def main():
 		with col1:
 			st.image(image_1, use_column_width=True)
 		with col2:
-			st.markdown('<p style="font-family:Roboto;font-size:60px;font-weight:bold"> 🎓 REEdI Modules Skillification Platform </p>', unsafe_allow_html=True)
+			st.markdown('<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules Skillification Platform </p>', unsafe_allow_html=True)
 		html_temp = """
 			<div class='tableauPlaceholder' id='viz1683884933680' style='position: relative'>
 				<noscript>
@@ -99,7 +99,7 @@ def main():
 		with col1:
 			st.image(image_1, use_column_width=True)
 		with col2:
-			st.markdown('<p style="font-family:Roboto;font-size:60px;font-weight:bold">🎓 Skills-In-Demand Analysis </p>', unsafe_allow_html=True)
+			st.markdown('<p style="font-family:Roboto;font-size:40px;font-weight:bold">🎓 Skills-In-Demand Analysis </p>', unsafe_allow_html=True)
 		html_temp = """
 			<div class='tableauPlaceholder' id='viz1684495388691' style='position: relative'>
 			<noscript>

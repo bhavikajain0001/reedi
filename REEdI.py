@@ -52,16 +52,12 @@ def sidebar_info():
     st.sidebar.markdown(overall_streamlit_style, unsafe_allow_html=True)
     st.sidebar.title("💡 REEdI CP3: Careers Progression Pathway Planning")
     st.sidebar.markdown(
-        """
-                   CP3 aims to align the REEdI program with industry needs to produce successful graduates and provide them with career planning support. It incorporates two major elements:"""
+        """CP3 aims to align the REEdI program with industry needs to produce successful graduates and provide them with career planning support. It incorporates two major elements:"""
     )
     st.sidebar.markdown(
-        """1. REEdI Course Modules Skillification to measure skills in supply"""
-    )
+        """1. REEdI Course Modules Skillification to measure skills in supply""")
     st.sidebar.markdown("""2. REEdI Module Mapping with UNSDGs""")
-    st.sidebar.markdown(
-        """3. Job postings data analysis to measure the skills in demand"""
-    )
+    st.sidebar.markdown("""3. Job postings data analysis to measure the skills in demand""")
 
 
 def main():
@@ -125,40 +121,8 @@ def main():
                 '<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules and UNSDGs Mapping Analysis </p>',
                 unsafe_allow_html=True,
             )
-        html_temp = """
-			<div class='tableauPlaceholder' id='viz1696544934772' style='position: relative'>
-			  <noscript>
-			    <a href='#'>
-			      <img alt='  REEdI Modules and UNSDGs Mapping Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RE&#47;REEdICoursesandUNSDGsMappingAnalysis&#47;Story1&#47;1_rss.png' style='border: none' />
-			    </a>
-			  </noscript>
-			  <object class='tableauViz' style='display:none;'>
-			    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-			    <param name='embed_code_version' value='3' />
-			    <param name='site_root' value='' />
-			    <param name='name' value='REEdICoursesandUNSDGsMappingAnalysis&#47;Story1' />
-			    <param name='tabs' value='no' />
-			    <param name='toolbar' value='yes' />
-			    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RE&#47;REEdICoursesandUNSDGsMappingAnalysis&#47;Story1&#47;1.png' />
-			    <param name='animate_transition' value='yes' />
-			    <param name='display_static_image' value='yes' />
-			    <param name='display_spinner' value='yes' />
-			    <param name='display_overlay' value='yes' />
-			    <param name='display_count' value='yes' />
-			    <param name='language' value='en-GB' />
-			  </object>
-			</div>
-			<script type='text/javascript'>
-			  var divElement = document.getElementById('viz1696544934772');
-			  var vizElement = divElement.getElementsByTagName('object')[0];
-			  vizElement.style.width = '100%';
-			  vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-			  var scriptElement = document.createElement('script');
-			  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-			  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-			</script>
-			"""
-        components.html(html_temp, width=1400, height=1000)
+        html_temp = """<div class='tableauPlaceholder' id='viz1696546031267' style='position: relative'><noscript><a href='#'><img alt='      REEdI Modules and UNSDGs Mapping ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RE&#47;REEdICoursesandUNSDGsMappingAnalysis&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='REEdICoursesandUNSDGsMappingAnalysis&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RE&#47;REEdICoursesandUNSDGsMappingAnalysis&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1696546031267');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
+        components.html(html_temp, width=1400, height=900)
 
     elif page == "Skills-In-Demand Analysis":
         col1, mid, col2 = st.columns([8, 1, 37])

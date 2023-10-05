@@ -2,7 +2,11 @@ import streamlit as st
 import streamlit.components.v1 as components
 from PIL import Image
 
-st.set_page_config(page_title="REEdI CP3: Careers Progression Pathway Planning", page_icon="💡", layout="wide")
+st.set_page_config(
+    page_title="REEdI CP3: Careers Progression Pathway Planning",
+    page_icon="💡",
+    layout="wide",
+)
 overall_streamlit_style = """
 			<style>		
 			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
@@ -42,27 +46,44 @@ overall_streamlit_style = """
 			"""
 
 st.markdown(overall_streamlit_style, unsafe_allow_html=True)
-		
+
 # structuring the side bar menu
 def sidebar_info():
-	st.sidebar.markdown(overall_streamlit_style, unsafe_allow_html=True)
-	st.sidebar.title('💡 REEdI CP3: Careers Progression Pathway Planning')
-	st.sidebar.markdown("""
-                   CP3 aims to align the REEdI program with industry needs to produce successful graduates and provide them with career planning support. It incorporates two major elements:""")
-	st.sidebar.markdown("""1. REEdI Course Modules Skillification to measure skills in supply""") 
-	st.sidebar.markdown("""2. REEdI Module Mapping with UNSDGs""") 
-	st.sidebar.markdown("""3. Job postings data analysis to measure the skills in demand""") 
+    st.sidebar.markdown(overall_streamlit_style, unsafe_allow_html=True)
+    st.sidebar.title("💡 REEdI CP3: Careers Progression Pathway Planning")
+    st.sidebar.markdown(
+        """
+                   CP3 aims to align the REEdI program with industry needs to produce successful graduates and provide them with career planning support. It incorporates two major elements:"""
+    )
+    st.sidebar.markdown(
+        """1. REEdI Course Modules Skillification to measure skills in supply"""
+    )
+    st.sidebar.markdown("""2. REEdI Module Mapping with UNSDGs""")
+    st.sidebar.markdown(
+        """3. Job postings data analysis to measure the skills in demand"""
+    )
+
 
 def main():
-	image_1 = Image.open('/app/images/logo_1.png')
-	page = st.sidebar.selectbox("Choose the Analysis", ["REEdI Modules' Skillification Analysis", "REEdI Modules and UNSDGs Mapping Analysis", "Skills-In-Demand Analysis"])
-	if page == "REEdI Modules' Skillification Analysis":
-		col1, mid, col2 = st.columns([8,1,37])
-		with col1:
-			st.image(image_1, use_column_width=True)
-		with col2:
-			st.markdown('<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules Skillification Analysis </p>', unsafe_allow_html=True)
-		html_temp = """
+    image_1 = Image.open("/app/images/logo_1.png")
+    page = st.sidebar.selectbox(
+        "Choose the Analysis",
+        [
+            "REEdI Modules' Skillification Analysis",
+            "REEdI Modules and UNSDGs Mapping Analysis",
+            "Skills-In-Demand Analysis",
+        ],
+    )
+    if page == "REEdI Modules' Skillification Analysis":
+        col1, mid, col2 = st.columns([8, 1, 37])
+        with col1:
+            st.image(image_1, use_column_width=True)
+        with col2:
+            st.markdown(
+                '<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules Skillification Analysis </p>',
+                unsafe_allow_html=True,
+            )
+        html_temp = """
 			<div class='tableauPlaceholder' id='viz1683884933680' style='position: relative'>
 				<noscript>
 					<a href='#'><img alt='REEdI Modules&#39; Skillification ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RE&#47;REEdICoursesSkillification&#47;REEdICoursesSkillification&#47;1_rss.png' style='border: none' /></a>
@@ -93,15 +114,18 @@ def main():
 			vizElement.parentNode.insertBefore(scriptElement, vizElement);
 			</script>
 			"""
-		components.html(html_temp, width=1400, height=1000)
-		
-	elif page == "REEdI Modules and UNSDGs Mapping":
-		col1, mid, col2 = st.columns([8,1,37])
-		with col1:
-			st.image(image_1, use_column_width=True)
-		with col2:
-			st.markdown('<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules and UNSDGs Mapping Analysis </p>', unsafe_allow_html=True)
-		html_temp = """
+        components.html(html_temp, width=1400, height=1000)
+
+    elif page == "REEdI Modules and UNSDGs Mapping":
+        col1, mid, col2 = st.columns([8, 1, 37])
+        with col1:
+            st.image(image_1, use_column_width=True)
+        with col2:
+            st.markdown(
+                '<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules and UNSDGs Mapping Analysis </p>',
+                unsafe_allow_html=True,
+            )
+        html_temp = """
 			<div class='tableauPlaceholder' id='viz1696544934772' style='position: relative'>
 			  <noscript>
 			    <a href='#'>
@@ -134,15 +158,18 @@ def main():
 			  vizElement.parentNode.insertBefore(scriptElement, vizElement);
 			</script>
 			"""
-		components.html(html_temp, width=1400, height=1000)
+        components.html(html_temp, width=1400, height=1000)
 
-	elif page == "Skills-In-Demand Analysis":
-		col1, mid, col2 = st.columns([8,1,37])
-		with col1:
-			st.image(image_1, use_column_width=True)
-		with col2:
-			st.markdown('<p style="font-family:Roboto;font-size:40px;font-weight:bold">🎓 Skills-In-Demand Analysis </p>', unsafe_allow_html=True)
-		html_temp = """
+    elif page == "Skills-In-Demand Analysis":
+        col1, mid, col2 = st.columns([8, 1, 37])
+        with col1:
+            st.image(image_1, use_column_width=True)
+        with col2:
+            st.markdown(
+                '<p style="font-family:Roboto;font-size:40px;font-weight:bold">🎓 Skills-In-Demand Analysis </p>',
+                unsafe_allow_html=True,
+            )
+        html_temp = """
 			<div class='tableauPlaceholder' id='viz1684495388691' style='position: relative'>
 			<noscript>
 				<a href='#'><img alt='Demand - MTU ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;Demand-MTU&#47;Demand-MTU&#47;1_rss.png' style='border: none' /></a>
@@ -181,16 +208,21 @@ def main():
 				vizElement.parentNode.insertBefore(scriptElement, vizElement);
 			</script>
 			"""
-		components.html(html_temp, width=1500, height=1800)
+        components.html(html_temp, width=1500, height=1800)
+
 
 def footer():
-    st.markdown('<div style=font-size:15px>Powered by Abodoo</div>', unsafe_allow_html=True)
-    
+    st.markdown(
+        "<div style=font-size:15px>Powered by Abodoo</div>", unsafe_allow_html=True
+    )
+
+
 # the controller
 def load_page():
     sidebar_info()
     main()
     footer()
 
-if __name__ == "__main__":    
-	load_page()
+
+if __name__ == "__main__":
+    load_page()

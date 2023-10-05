@@ -55,13 +55,13 @@ def sidebar_info():
 
 def main():
 	image_1 = Image.open('/app/images/logo_1.png')
-	page = st.sidebar.selectbox("Choose the Platform", ["REEdI Modules' Skillification Platform", "REEdI Modules and UNSDGs Mapping", "Skills-In-Demand Analysis"])
-	if page == "REEdI Modules' Skillification Platform":
+	page = st.sidebar.selectbox("Choose the Analysis", ["REEdI Modules' Skillification Analysis", "REEdI Modules and UNSDGs Mapping Analysis", "Skills-In-Demand Analysis"])
+	if page == "REEdI Modules' Skillification Analysis":
 		col1, mid, col2 = st.columns([8,1,37])
 		with col1:
 			st.image(image_1, use_column_width=True)
 		with col2:
-			st.markdown('<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules Skillification Platform </p>', unsafe_allow_html=True)
+			st.markdown('<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules Skillification Analysis </p>', unsafe_allow_html=True)
 		html_temp = """
 			<div class='tableauPlaceholder' id='viz1683884933680' style='position: relative'>
 				<noscript>
@@ -94,17 +94,18 @@ def main():
 			</script>
 			"""
 		components.html(html_temp, width=1400, height=1000)
+		
 	elif page == "REEdI Modules and UNSDGs Mapping":
 		col1, mid, col2 = st.columns([8,1,37])
 		with col1:
 			st.image(image_1, use_column_width=True)
 		with col2:
-			st.markdown('<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules Skillification Platform </p>', unsafe_allow_html=True)
+			st.markdown('<p style="font-family:Roboto;font-size:40px;font-weight:bold"> 🎓 REEdI Modules and UNSDGs Mapping Analysis </p>', unsafe_allow_html=True)
 		html_temp = """
 			<div class='tableauPlaceholder' id='viz1696544934772' style='position: relative'>
 			  <noscript>
 			    <a href='#'>
-			      <img alt='    REEdI Modules and UNSDGs Mapping ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RE&#47;REEdICoursesandUNSDGsMappingAnalysis&#47;Story1&#47;1_rss.png' style='border: none' />
+			      <img alt='  REEdI Modules and UNSDGs Mapping Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RE&#47;REEdICoursesandUNSDGsMappingAnalysis&#47;Story1&#47;1_rss.png' style='border: none' />
 			    </a>
 			  </noscript>
 			  <object class='tableauViz' style='display:none;'>
@@ -133,6 +134,7 @@ def main():
 			  vizElement.parentNode.insertBefore(scriptElement, vizElement);
 			</script>
 			"""
+		components.html(html_temp, width=1400, height=1000)
 
 	elif page == "Skills-In-Demand Analysis":
 		col1, mid, col2 = st.columns([8,1,37])

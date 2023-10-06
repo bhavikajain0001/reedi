@@ -154,7 +154,7 @@ def main():
 		  vizElement.parentNode.insertBefore(scriptElement, vizElement);
 		</script>	
  	"""
-        components.html(html_temp, width=1400, height=500)
+        components.html(html_temp, width=1400, height=800)
 
     elif page == "Skills-In-Demand Analysis":
         col1, mid, col2 = st.columns([8, 1, 37])

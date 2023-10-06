@@ -112,7 +112,7 @@ def main():
 			"""
         components.html(html_temp, width=1400, height=1000)
 
-    elif page == "REEdI Modules and UNSDGs Mapping":
+    elif page == "REEdI Modules and UNSDGs Mapping Analysis":
         col1, mid, col2 = st.columns([8, 1, 37])
         with col1:
             st.image(image_1, use_column_width=True)
